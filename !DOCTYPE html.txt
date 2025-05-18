@@ -86,7 +86,6 @@
       font-weight: 600;
       font-size: 0.95em;
     }
-    /* Download Button */
     .download-btn {
       display: inline-block;
       margin-bottom: 30px;
@@ -103,6 +102,23 @@
     .download-btn:hover {
       background-color: #07294d;
       box-shadow: 0 8px 20px rgba(7, 41, 77, 0.6);
+    }
+    .lang-switch {
+      float: right;
+      margin-top: 10px;
+    }
+    .lang-switch button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      font-weight: bold;
+      border: none;
+      background: #1d3557;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .lang-switch button:hover {
+      background: #0d3b66;
     }
     @media (max-width: 600px) {
       .container {
@@ -126,73 +142,75 @@
 </head>
 <body>
   <div class="container">
-    <!-- Download PDF Button -->
-    <a href="cv.pdf" class="download-btn" download="Ephrem_Bzuayehu_Asmamawu_CV.pdf" target="_blank" rel="noopener">
-      📥 Download CV (PDF)
+    <!-- Language Switcher -->
+    <div class="lang-switch">
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('it')">IT</button>
+    </div>
+
+    <!-- Download Button -->
+    <a href="cv.pdf" class="download-btn" download="Ephrem_Bzuayehu_Asmamawu_CV.pdf" target="_blank" rel="noopener" data-text="download">
+      Download CV (PDF)
     </a>
 
     <h1>Ephrem Bzuayehu Asmamawu</h1>
     <div class="contact-info">
       <span>📞 +39 3514683625</span>
       <span>✉️ <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></span>
-      <span>🔗 <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank" rel="noopener">LinkedIn Profile</a></span>
+      <span>🔗 <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank" rel="noopener">LinkedIn</a></span>
       <span>🏠 Via Giovanni Battista Tiepolo, 54, 35129 Padova, Italy</span>
     </div>
 
-    <h2>About Me</h2>
-    <p>
-      I am a master’s student in Energy Engineering with a Mechanical Engineering background and hands-on experience in computer-based vehicle systems and advanced energy modeling tools. Passionate about renewable energy and sustainability, I focus on energy efficiency and innovative technologies. My goal is to develop solutions contributing to a sustainable and energy-efficient future.
-    </p>
+    <h2 data-text="about">About Me</h2>
+    <p data-text="aboutText"></p>
 
-    <h2>Work Experience</h2>
+    <h2 data-text="experience">Work Experience</h2>
     <div class="section-content">
       <div>
-        <div class="job-title">Motor Vehicle Engine Inspector – General Motor Shear Company</div>
-        <div class="date-location">Addis Ababa, Ethiopia | Jan 2021 – Aug 2022</div>
+        <div class="job-title" data-text="job1Title"></div>
+        <div class="date-location" data-text="job1Date"></div>
         <ul>
-          <li>Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools.</li>
-          <li>Specialized in troubleshooting and repairing automotive electrical components.</li>
+          <li data-text="job1Task1"></li>
+          <li data-text="job1Task2"></li>
         </ul>
       </div>
       <div style="margin-top: 25px;">
-        <div class="job-title">Internship – MANENS S.P.A.</div>
-        <div class="date-location">Padova, Italy | Dec 2024 – Current</div>
+        <div class="job-title" data-text="job2Title"></div>
+        <div class="date-location" data-text="job2Date"></div>
         <ul>
-          <li>Conducting research on reducing building energy consumption in collaboration with MANENS S.P.A.</li>
-          <li>Applying modeling tools and sustainable design techniques to improve energy efficiency in building operations.</li>
+          <li data-text="job2Task1"></li>
+          <li data-text="job2Task2"></li>
         </ul>
       </div>
     </div>
 
-    <h2>Education and Training</h2>
+    <h2 data-text="education">Education and Training</h2>
     <div class="section-content">
       <div>
-        <div class="job-title">MSc in Energy Engineering – University of Padua</div>
-        <div class="date-location">Padua, Italy | Ongoing</div>
+        <div class="job-title" data-text="edu1Title"></div>
+        <div class="date-location" data-text="edu1Date"></div>
         <a href="https://www.unipd.it/en/" target="_blank" rel="noopener">www.unipd.it/en</a>
       </div>
       <div style="margin-top: 20px;">
-        <div class="job-title">Erasmus+ Exchange Program – Warsaw University of Technology</div>
-        <div class="date-location">Warsaw, Poland | Feb 2024 – Jul 2025</div>
+        <div class="job-title" data-text="edu2Title"></div>
+        <div class="date-location" data-text="edu2Date"></div>
         <a href="https://eng.pw.edu.pl/" target="_blank" rel="noopener">eng.pw.edu.pl</a>
       </div>
       <div style="margin-top: 20px;">
-        <div class="job-title">BSc in Mechanical Engineering – Ambo University Institute of Technology</div>
-        <div class="date-location">Ambo, Ethiopia</div>
+        <div class="job-title" data-text="edu3Title"></div>
+        <div class="date-location" data-text="edu3Date"></div>
         <a href="https://ambou.edu.et/" target="_blank" rel="noopener">ambou.edu.et</a>
       </div>
     </div>
 
-    <h2>Language Skills</h2>
-    <div class="section-content">
-      <ul>
-        <li><strong>Amharic:</strong> Mother tongue</li>
-        <li><strong>English:</strong> Listening (C1), Reading (B2), Writing (B2), Speaking (B2)</li>
-        <li><strong>Italian:</strong> Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)</li>
-      </ul>
-    </div>
+    <h2 data-text="languages">Language Skills</h2>
+    <ul>
+      <li><strong>Amharic:</strong> Mother tongue</li>
+      <li data-text="langEnglish"></li>
+      <li data-text="langItalian"></li>
+    </ul>
 
-    <h2>Skills</h2>
+    <h2 data-text="skills">Skills</h2>
     <div class="skill-list">
       <span>Python</span>
       <span>SQL</span>
@@ -207,10 +225,92 @@
       <span>Google Drive</span>
     </div>
 
-    <h2>Organizational Skills</h2>
-    <p>
-      Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in their academic success.
-    </p>
+    <h2 data-text="org">Organizational Skills</h2>
+    <p data-text="orgText"></p>
   </div>
+
+  <!-- LANGUAGE SCRIPT -->
+  <script>
+    const translations = {
+      en: {
+        download: "Download CV (PDF)",
+        about: "About Me",
+        aboutText: "I am a master’s student in Energy Engineering with a Mechanical Engineering background...",
+        experience: "Work Experience",
+        job1Title: "Motor Vehicle Engine Inspector – General Motor Shear Company",
+        job1Date: "Addis Ababa, Ethiopia | Jan 2021 – Aug 2022",
+        job1Task1: "Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools.",
+        job1Task2: "Specialized in troubleshooting and repairing automotive electrical components.",
+        job2Title: "Internship – MANENS S.P.A.",
+        job2Date: "Padova, Italy | Dec 2024 – Current",
+        job2Task1: "Conducting research on reducing building energy consumption...",
+        job2Task2: "Applying modeling tools and sustainable design techniques...",
+        education: "Education and Training",
+        edu1Title: "MSc in Energy Engineering – University of Padua",
+        edu1Date: "Padua, Italy | Ongoing",
+        edu2Title: "Erasmus+ Exchange Program – Warsaw University of Technology",
+        edu2Date: "Warsaw, Poland | Feb 2024 – Jul 2025",
+        edu3Title: "BSc in Mechanical Engineering – Ambo University",
+        edu3Date: "Ambo, Ethiopia",
+        languages: "Language Skills",
+        langEnglish: "English: Listening (C1), Reading (B2), Writing (B2), Speaking (B2)",
+        langItalian: "Italian: Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)",
+        skills: "Skills",
+        org: "Organizational Skills",
+        orgText: "Academic Tutor Coordinator: Organized and supervised tutoring sessions..."
+      },
+      it: {
+        download: "Scarica CV (PDF)",
+        about: "Chi Sono",
+        aboutText: "Sono uno studente magistrale in Ingegneria Energetica con una formazione in Ingegneria Meccanica...",
+        experience: "Esperienza Lavorativa",
+        job1Title: "Ispettore Motore Veicolare – General Motor Shear Company",
+        job1Date: "Addis Abeba, Etiopia | Gen 2021 – Ago 2022",
+        job1Task1: "Diagnosi e manutenzione dei sistemi elettrici dei veicoli usando strumenti computerizzati.",
+        job1Task2: "Specializzato nella risoluzione di problemi e riparazione di componenti elettrici automobilistici.",
+        job2Title: "Tirocinio – MANENS S.P.A.",
+        job2Date: "Padova, Italia | Dic 2024 – Attuale",
+        job2Task1: "Ricerca per ridurre il consumo energetico degli edifici...",
+        job2Task2: "Applicazione di strumenti di modellazione e tecniche di design sostenibile.",
+        education: "Formazione e Istruzione",
+        edu1Title: "Laurea Magistrale in Ingegneria Energetica – Università di Padova",
+        edu1Date: "Padova, Italia | In Corso",
+        edu2Title: "Programma Erasmus+ – Politecnico di Varsavia",
+        edu2Date: "Varsavia, Polonia | Feb 2024 – Lug 2025",
+        edu3Title: "Laurea Triennale in Ingegneria Meccanica – Ambo University",
+        edu3Date: "Ambo, Etiopia",
+        languages: "Lingue",
+        langEnglish: "Inglese: Ascolto (C1), Lettura (B2), Scrittura (B2), Parlato (B2)",
+        langItalian: "Italiano: Ascolto (A2), Lettura (A2), Scrittura (A2), Parlato (A2/A1)",
+        skills: "Competenze",
+        org: "Capacità Organizzative",
+        orgText: "Coordinatore Tutor Accademici: Ho organizzato e supervisionato sessioni di tutoraggio..."
+      }
+    };
+
+    function setLanguage(lang, store = true) {
+      const strings = translations[lang] || translations.en;
+      for (const key in strings) {
+        const el = document.querySelector(`[data-text="${key}"]`);
+        if (el) el.textContent = strings[key];
+      }
+      if (store) {
+        localStorage.setItem('preferredLang', lang);
+      }
+    }
+
+    function detectBrowserLanguage() {
+      const savedLang = localStorage.getItem('preferredLang');
+      if (savedLang) return savedLang;
+      const browserLang = navigator.language || navigator.userLanguage;
+      return browserLang.startsWith('it') ? 'it' : 'en';
+    }
+
+    window.onload = () => {
+      const lang = detectBrowserLanguage();
+      setLanguage(lang, false);
+    };
+  </script>
 </body>
 </html>
+
