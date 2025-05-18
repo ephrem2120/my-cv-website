@@ -52,12 +52,14 @@
       <li>
         <strong>Ispettore Motori Veicoli – GENERAL MOTOR SHEAR COMPANY</strong><br />
         Addis Abeba, Etiopia | 20/01/2021 – 01/08/2022<br />
-        Diagnosi e manutenzione dei sistemi elettrici dei veicoli utilizzando scanner e strumenti computerizzati. Specializzato nella risoluzione di problemi e riparazione di componenti elettrici automobilistici.
+        Diagnosi e manutenzione dei sistemi elettrici dei veicoli utilizzando scanner e strumenti computerizzati. 
+        Specializzato nella risoluzione di problemi e riparazione di componenti elettrici automobilistici.
       </li>
       <li>
         <strong>Tirocinio – MANENS S.P.A.</strong><br />
         Padova, Italia | 15/12/2024 – Presente<br />
-        Ricerca per ridurre il consumo energetico degli edifici. Applicazione di strumenti di modellazione e tecniche di design sostenibile per migliorare l’efficienza energetica nelle operazioni edilizie.
+        Ricerca per ridurre il consumo energetico degli edifici. 
+        Applicazione di strumenti di modellazione e tecniche di design sostenibile per migliorare l’efficienza energetica nelle operazioni edilizie.
       </li>
     </ul>
 
