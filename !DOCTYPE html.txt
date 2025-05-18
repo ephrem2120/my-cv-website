@@ -3,126 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ephrem Bzuayehu Asmamawu - CV</title>
+  <title>Ephrem Bzuayehu Asmamawu - Energy Engineer</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      padding: 30px;
       color: #333;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
     }
-    header, section {
-      background: #fff;
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 40px 50px;
       border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
     h1, h2 {
-      color: #2c3e50;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.2em;
-    }
-    h2 {
-      border-bottom: 2px solid #2e86de;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
-    .contact-info {
-      text-align: center;
-      font-size: 0.95em;
-    }
-    .contact-info a {
-      color: #2e86de;
-      text-decoration: none;
-    }
-    .download-btn {
-      display: inline-block;
-      margin: 20px auto;
-      text-align: center;
-      background-color: #2e86de;
-      color: white;
-      padding: 12px 25px;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .download-btn:hover {
-      background-color: #1b5fbf;
+      color: #004a99;
+      margin-bottom: 12px;
     }
     ul {
       padding-left: 20px;
     }
-    .skills, .languages {
-      columns: 2;
+    a {
+      color: #0077cc;
+      text-decoration: none;
     }
-    footer {
-      text-align: center;
-      font-size: 0.85em;
-      color: #999;
-      margin-top: 40px;
+    a:hover {
+      text-decoration: underline;
+    }
+    input, textarea, button {
+      font-size: 1em;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: #004a99;
+      outline: none;
+    }
+    button {
+      background-color: #004a99;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .download-btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 35px auto;
+      background-color: #004a99;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0, 74, 153, 0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #003366;
+      box-shadow: 0 8px 20px rgba(0, 74, 153, 0.5);
     }
     @media (max-width: 600px) {
-      .skills, .languages {
-        columns: 1;
+      body {
+        padding: 15px;
+      }
+      .container {
+        padding: 25px 20px;
+      }
+      input, textarea {
+        font-size: 1em;
+      }
+      .download-btn {
+        padding: 12px 25px;
       }
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="container">
     <h1>Ephrem Bzuayehu Asmamawu</h1>
-    <div class="contact-info">
-      <p>Nationality: Ethiopian | Date of Birth: 29/05/1997</p>
-      <p>Phone: (+39) 3514683625 | Email: <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank">linkedin.com/in/ephremasmamawu</a></p>
-      <p>Address: Via Giovanni Battista Tiepolo, 54, 35129 Padova (Italy)</p>
+    <p><strong>Email:</strong> <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></p>
+    <p><strong>Phone:</strong> +39 3514683625</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank" rel="noopener">ephremasmamawu</a></p>
+
+    <a href="cv.pdf" class="download-btn" download>📄 Download My CV (PDF)</a>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I am a master's student in Energy Engineering with a background in Mechanical Engineering. I have hands-on experience in computer-based vehicle systems and advanced energy modeling tools. Passionate about sustainability and renewable energy, I aim to work on innovative projects in energy efficiency and smart systems.</p>
     </div>
 
-    <p style="text-align: center;">
-      <a href="cv.pdf" class="download-btn" download>📄 Download My CV (PDF)</a>
-    </p>
-  </header>
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>University of Padua, Italy</strong> – MSc in Energy Engineering (Ongoing)</li>
+        <li><strong>Warsaw University of Technology, Poland</strong> – Erasmus+ Exchange Program (2024–2025)</li>
+        <li><strong>Ambo University, Ethiopia</strong> – BSc in Mechanical Engineering</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a master’s student in Energy Engineering with a Mechanical Engineering background and hands-on experience
-      in computer-based vehicle systems, and advanced energy modeling tools. Passionate about renewable energy and sustainability, focusing on energy efficiency and innovative technologies. My goal is to apply my expertise to develop solutions that contribute to a more sustainable and energy-efficient future.
-    </p>
-  </section>
+    <div class="section">
+      <h2>Work Experience</h2>
+      <ul>
+        <li><strong>Intern, MANENS S.P.A. (Padova, Italy)</strong><br>
+        Worked on research to reduce building energy consumption using innovative design and simulation tools.</li>
+        <li><strong>Motor Vehicle Engine Inspector, GENERAL MOTOR SHEAR COMPANY (Addis Ababa, Ethiopia)</strong><br>
+        Diagnosed and repaired electrical and mechanical systems in vehicles; collaborated with technicians to improve diagnostics.</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <strong>Motor Vehicle Engine Inspector</strong><br>
-        General Motor Shear Company – Addis Ababa, Ethiopia<br>
-        <em>[20/01/2021 – 01/08/2022]</em><br>
-        Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools. Specialized in troubleshooting and repairing automotive electrical components.
-      </li>
-      <li>
-        <strong>Internship (Energy Research)</strong><br>
-        MANENS S.P.A., Padova, Italy<br>
-        <em>[15/12/2024 – Present]</em><br>
-        Conducting research on reducing building energy consumption and applying sustainable design techniques to improve building performance.
-      </li>
-    </ul>
-  </section>
+    <div class="section">
+      <h2>Skills</h2>
+      <p>Python, SQL, MATLAB, Ansys, AutoCAD, Rhino, EnergyPlus, OpenStudio, Microsoft Office</p>
+    </div>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <strong>Energy Engineering (MSc)</strong> – University of Padua, Italy<br>
-        <a href="https://www.unipd.it/en/" target="_blank">https://www.unipd.it/en/</a>
-      </li>
-      <li>
-        <strong>Erasmus+ Exchange Program</strong> – Warsaw University of Technology, Poland<br>
-        <em>[17/02/2024 – 20/07/2025]</
+    <div class="section">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
