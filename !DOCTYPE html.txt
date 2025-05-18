@@ -86,6 +86,7 @@
       font-weight: 600;
       font-size: 0.95em;
     }
+    /* Download Button */
     .download-btn {
       display: inline-block;
       margin-bottom: 30px;
@@ -103,98 +104,123 @@
       background-color: #07294d;
       box-shadow: 0 8px 20px rgba(7, 41, 77, 0.6);
     }
-    .lang-switcher {
-      text-align: right;
-      margin-bottom: 15px;
+    /* Language selector */
+    .language-selector {
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: flex-end;
     }
-    .lang-switcher button {
-      margin-left: 10px;
-      padding: 8px 14px;
-      font-weight: bold;
-      border: none;
-      background-color: #1d3557;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
+    select {
+      padding: 6px 10px;
+      font-size: 1em;
+      border-radius: 6px;
+      border: 1px solid #ccc;
     }
-    .lang-switcher button:hover {
-      background-color: #0d3b66;
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px 20px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      .download-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+      .skill-list {
+        justify-content: center;
+      }
+      .language-selector {
+        justify-content: center;
+        margin-bottom: 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Language Switcher -->
-    <div class="lang-switcher">
-      <button onclick="setLanguage('en')">English</button>
-      <button onclick="setLanguage('it')">Italiano</button>
-    </div>
 
+  <!-- Language Selector -->
+  <div class="language-selector">
+    <label for="lang-select" style="margin-right: 8px; font-weight: 600; color: #0d3b66;">Language:</label>
+    <select id="lang-select" aria-label="Select CV language">
+      <option value="en" selected>English</option>
+      <option value="it">Italiano</option>
+      <option value="am">Amharic</option>
+    </select>
+  </div>
+
+  <div class="container" id="cv-content">
     <!-- Download PDF Button -->
     <a href="cv.pdf" class="download-btn" download="Ephrem_Bzuayehu_Asmamawu_CV.pdf" target="_blank" rel="noopener">
-      📥 <span data-text="download">Download CV (PDF)</span>
+      📥 Download CV (PDF)
     </a>
 
     <h1>Ephrem Bzuayehu Asmamawu</h1>
     <div class="contact-info">
       <span>📞 +39 3514683625</span>
       <span>✉️ <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></span>
-      <span>🔗 <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank">LinkedIn Profile</a></span>
+      <span>🔗 <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank" rel="noopener">LinkedIn Profile</a></span>
       <span>🏠 Via Giovanni Battista Tiepolo, 54, 35129 Padova, Italy</span>
     </div>
 
-    <h2 data-text="about">About Me</h2>
-    <p data-text="aboutText">
-      I am a master’s student in Energy Engineering with a Mechanical Engineering background and hands-on experience in computer-based vehicle systems and advanced energy modeling tools...
+    <h2>About Me</h2>
+    <p>
+      I am a master’s student in Energy Engineering with a Mechanical Engineering background and hands-on experience in computer-based vehicle systems and advanced energy modeling tools. Passionate about renewable energy and sustainability, I focus on energy efficiency and innovative technologies. My goal is to develop solutions contributing to a sustainable and energy-efficient future.
     </p>
 
-    <h2 data-text="experience">Work Experience</h2>
+    <h2>Work Experience</h2>
     <div class="section-content">
       <div>
-        <div class="job-title" data-text="job1">Motor Vehicle Engine Inspector – General Motor Shear Company</div>
-        <div class="date-location" data-text="job1Date">Addis Ababa, Ethiopia | Jan 2021 – Aug 2022</div>
+        <div class="job-title">Motor Vehicle Engine Inspector – General Motor Shear Company</div>
+        <div class="date-location">Addis Ababa, Ethiopia | Jan 2021 – Aug 2022</div>
         <ul>
-          <li data-text="job1Desc1">Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools.</li>
-          <li data-text="job1Desc2">Specialized in troubleshooting and repairing automotive electrical components.</li>
+          <li>Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools.</li>
+          <li>Specialized in troubleshooting and repairing automotive electrical components.</li>
         </ul>
       </div>
       <div style="margin-top: 25px;">
-        <div class="job-title" data-text="job2">Internship – MANENS S.P.A.</div>
-        <div class="date-location" data-text="job2Date">Padova, Italy | Dec 2024 – Current</div>
+        <div class="job-title">Internship – MANENS S.P.A.</div>
+        <div class="date-location">Padova, Italy | Dec 2024 – Current</div>
         <ul>
-          <li data-text="job2Desc1">Conducting research on reducing building energy consumption in collaboration with MANENS S.P.A.</li>
-          <li data-text="job2Desc2">Applying modeling tools and sustainable design techniques to improve energy efficiency in building operations.</li>
+          <li>Conducting research on reducing building energy consumption in collaboration with MANENS S.P.A.</li>
+          <li>Applying modeling tools and sustainable design techniques to improve energy efficiency in building operations.</li>
         </ul>
       </div>
     </div>
 
-    <h2 data-text="education">Education and Training</h2>
+    <h2>Education and Training</h2>
     <div class="section-content">
       <div>
-        <div class="job-title" data-text="edu1">MSc in Energy Engineering – University of Padua</div>
-        <div class="date-location" data-text="edu1Date">Padua, Italy | Ongoing</div>
-        <a href="https://www.unipd.it/en/" target="_blank">www.unipd.it/en</a>
+        <div class="job-title">MSc in Energy Engineering – University of Padua</div>
+        <div class="date-location">Padua, Italy | Ongoing</div>
+        <a href="https://www.unipd.it/en/" target="_blank" rel="noopener">www.unipd.it/en</a>
       </div>
       <div style="margin-top: 20px;">
-        <div class="job-title" data-text="edu2">Erasmus+ Exchange Program – Warsaw University of Technology</div>
-        <div class="date-location" data-text="edu2Date">Warsaw, Poland | Feb 2024 – Jul 2025</div>
-        <a href="https://eng.pw.edu.pl/" target="_blank">eng.pw.edu.pl</a>
+        <div class="job-title">Erasmus+ Exchange Program – Warsaw University of Technology</div>
+        <div class="date-location">Warsaw, Poland | Feb 2024 – Jul 2025</div>
+        <a href="https://eng.pw.edu.pl/" target="_blank" rel="noopener">eng.pw.edu.pl</a>
       </div>
       <div style="margin-top: 20px;">
-        <div class="job-title" data-text="edu3">BSc in Mechanical Engineering – Ambo University Institute of Technology</div>
+        <div class="job-title">BSc in Mechanical Engineering – Ambo University Institute of Technology</div>
         <div class="date-location">Ambo, Ethiopia</div>
-        <a href="https://ambou.edu.et/" target="_blank">ambou.edu.et</a>
+        <a href="https://ambou.edu.et/" target="_blank" rel="noopener">ambou.edu.et</a>
       </div>
     </div>
 
-    <h2 data-text="languageSkills">Language Skills</h2>
-    <ul>
-      <li data-text="lang1"><strong>Amharic:</strong> Mother tongue</li>
-      <li data-text="lang2"><strong>English:</strong> Listening (C1), Reading (B2), Writing (B2), Speaking (B2)</li>
-      <li data-text="lang3"><strong>Italian:</strong> Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)</li>
-    </ul>
+    <h2>Language Skills</h2>
+    <div class="section-content">
+      <ul>
+        <li><strong>Amharic:</strong> Mother tongue</li>
+        <li><strong>English:</strong> Listening (C1), Reading (C1), Writing (B2), Speaking (B2)</li>
+        <li><strong>Italian:</strong> Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)</li>
+      </ul>
+    </div>
 
-    <h2 data-text="skills">Skills</h2>
+    <h2>Skills</h2>
     <div class="skill-list">
       <span>Python</span>
       <span>SQL</span>
@@ -209,89 +235,115 @@
       <span>Google Drive</span>
     </div>
 
-    <h2 data-text="organizational">Organizational Skills</h2>
-    <p data-text="orgText">
+    <h2>Organizational Skills</h2>
+    <p>
       Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in their academic success.
     </p>
   </div>
 
   <script>
-    const translations = {
-      en: {
-        download: "Download CV (PDF)",
-        about: "About Me",
-        aboutText: "I am a master’s student in Energy Engineering with a Mechanical Engineering background and hands-on experience in computer-based vehicle systems and advanced energy modeling tools...",
-        experience: "Work Experience",
-        job1: "Motor Vehicle Engine Inspector – General Motor Shear Company",
-        job1Date: "Addis Ababa, Ethiopia | Jan 2021 – Aug 2022",
-        job1Desc1: "Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools.",
-        job1Desc2: "Specialized in troubleshooting and repairing automotive electrical components.",
-        job2: "Internship – MANENS S.P.A.",
-        job2Date: "Padova, Italy | Dec 2024 – Current",
-        job2Desc1: "Conducting research on reducing building energy consumption in collaboration with MANENS S.P.A.",
-        job2Desc2: "Applying modeling tools and sustainable design techniques to improve energy efficiency in building operations.",
-        education: "Education and Training",
-        edu1: "MSc in Energy Engineering – University of Padua",
-        edu1Date: "Padua, Italy | Ongoing",
-        edu2: "Erasmus+ Exchange Program – Warsaw University of Technology",
-        edu2Date: "Warsaw, Poland | Feb 2024 – Jul 2025",
-        edu3: "BSc in Mechanical Engineering – Ambo University Institute of Technology",
-        languageSkills: "Language Skills",
-        lang1: "Amharic: Mother tongue",
-        lang2: "English: Listening (C1), Reading (B2), Writing (B2), Speaking (B2)",
-        lang3: "Italian: Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)",
-        skills: "Skills",
-        organizational: "Organizational Skills",
-        orgText: "Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in their academic success."
-      },
-      it: {
-        download: "Scarica CV (PDF)",
-        about: "Chi Sono",
-        aboutText: "Sono uno studente magistrale in Ingegneria Energetica con background in Ingegneria Meccanica ed esperienza pratica in sistemi veicolari computerizzati e strumenti avanzati di modellazione energetica...",
-        experience: "Esperienza Lavorativa",
-        job1: "Ispettore Motore Veicoli – General Motor Shear Company",
-        job1Date: "Addis Abeba, Etiopia | Gen 2021 – Ago 2022",
-        job1Desc1: "Diagnosi e manutenzione dei sistemi elettrici dei veicoli utilizzando scanner e strumenti computerizzati.",
-        job1Desc2: "Specializzato nella risoluzione dei problemi e nella riparazione dei componenti elettrici automobilistici.",
-        job2: "Tirocinio – MANENS S.P.A.",
-        job2Date: "Padova, Italia | Dic 2024 – Presente",
-        job2Desc1: "Ricerca per ridurre il consumo energetico degli edifici in collaborazione con MANENS S.P.A.",
-        job2Desc2: "Applicazione di strumenti di modellazione e tecniche di design sostenibile per migliorare l'efficienza energetica.",
-        education: "Formazione e Istruzione",
-        edu1: "Laurea Magistrale in Ingegneria Energetica – Università di Padova",
-        edu1Date: "Padova, Italia | In corso",
-        edu2: "Programma Erasmus+ – Università Tecnologica di Varsavia",
-        edu2Date: "Varsavia, Polonia | Feb 2024 – Lug 2025",
-        edu3: "Laurea in Ingegneria Meccanica – Istituto Tecnologico di Ambo",
-        languageSkills: "Competenze Linguistiche",
-        lang1: "Amarico: Madrelingua",
-        lang2: "Inglese: Ascolto (C1), Lettura (B2), Scrittura (B2), Parlato (B2)",
-        lang3: "Italiano: Ascolto (A2), Lettura (A2), Scrittura (A2), Parlato (A2/A1)",
-        skills: "Competenze Tecniche",
-        organizational: "Competenze Organizzative",
-        orgText: "Coordinatore Tutor Accademici: Organizzazione e supervisione delle sessioni di tutoraggio per supportare il successo degli studenti."
-      }
+    // Example language content data (only English here for demo)
+    // You can extend this with Italian, Amharic, etc.
+    const contents = {
+      en: `
+        <a href="cv.pdf" class="download-btn" download="Ephrem_Bzuayehu_Asmamawu_CV.pdf" target="_blank" rel="noopener">
+          📥 Download CV (PDF)
+        </a>
+
+        <h1>Ephrem Bzuayehu Asmamawu</h1>
+        <div class="contact-info">
+          <span>📞 +39 3514683625</span>
+          <span>✉️ <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></span>
+          <span>🔗 <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank" rel="noopener">LinkedIn Profile</a></span>
+          <span>🏠 Via Giovanni Battista Tiepolo, 54, 35129 Padova, Italy</span>
+        </div>
+
+        <h2>About Me</h2>
+        <p>
+          I am a master’s student in Energy Engineering with a Mechanical Engineering background and hands-on experience in computer-based vehicle systems and advanced energy modeling tools. Passionate about renewable energy and sustainability, I focus on energy efficiency and innovative technologies. My goal is to develop solutions contributing to a sustainable and energy-efficient future.
+        </p>
+
+        <h2>Work Experience</h2>
+        <div class="section-content">
+          <div>
+            <div class="job-title">Motor Vehicle Engine Inspector – General Motor Shear Company</div>
+            <div class="date-location">Addis Ababa, Ethiopia | Jan 2021 – Aug 2022</div>
+            <ul>
+              <li>Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools.</li>
+              <li>Specialized in troubleshooting and repairing automotive electrical components.</li>
+            </ul>
+          </div>
+          <div style="margin-top: 25px;">
+            <div class="job-title">Internship – MANENS S.P.A.</div>
+            <div class="date-location">Padova, Italy | Dec 2024 – Current</div>
+            <ul>
+              <li>Conducting research on reducing building energy consumption in collaboration with MANENS S.P.A.</li>
+              <li>Applying modeling tools and sustainable design techniques to improve energy efficiency in building operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Education and Training</h2>
+        <div class="section-content">
+          <div>
+            <div class="job-title">MSc in Energy Engineering – University of Padua</div>
+            <div class="date-location">Padua, Italy | Ongoing</div>
+            <a href="https://www.unipd.it/en/" target="_blank" rel="noopener">www.unipd.it/en</a>
+          </div>
+          <div style="margin-top: 20px;">
+            <div class="job-title">Erasmus+ Exchange Program – Warsaw University of Technology</div>
+            <div class="date-location">Warsaw, Poland | Feb 2024 – Jul 2025</div>
+            <a href="https://eng.pw.edu.pl/" target="_blank" rel="noopener">eng.pw.edu.pl</a>
+          </div>
+          <div style="margin-top: 20px;">
+            <div class="job-title">BSc in Mechanical Engineering – Ambo University Institute of Technology</div>
+            <div class="date-location">Ambo, Ethiopia</div>
+            <a href="https://ambou.edu.et/" target="_blank" rel="noopener">ambou.edu.et</a>
+          </div>
+        </div>
+
+        <h2>Language Skills</h2>
+        <div class="section-content">
+          <ul>
+            <li><strong>Amharic:</strong> Mother tongue</li>
+            <li><strong>English:</strong> Listening (C1), Reading (C1), Writing (B2), Speaking (B2)</li>
+            <li><strong>Italian:</strong> Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)</li>
+          </ul>
+        </div>
+
+        <h2>Skills</h2>
+        <div class="skill-list">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>MATLAB</span>
+          <span>Ansys</span>
+          <span>AutoCAD</span>
+          <span>Corel Draw</span>
+          <span>OpenStudio</span>
+          <span>EnergyPlus</span>
+          <span>Rhino</span>
+          <span>Microsoft Office</span>
+          <span>Google Drive</span>
+        </div>
+
+        <h2>Organizational Skills</h2>
+        <p>
+          Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in their academic success.
+        </p>
+      `,
+      // You can add Italian or Amharic versions here
+      it: `<p><em>Italian version coming soon.</em></p>`,
+      am: `<p><em>Amharic version coming soon.</em></p>`
     };
 
-    function setLanguage(lang) {
-      localStorage.setItem("language", lang);
-      const dict = translations[lang] || translations.en;
-      document.querySelectorAll("[data-text]").forEach(el => {
-        const key = el.getAttribute("data-text");
-        if (dict[key]) el.textContent = dict[key];
-      });
-    }
+    const langSelect = document.getElementById('lang-select');
+    const cvContent = document.getElementById('cv-content');
 
-    function detectBrowserLanguage() {
-      const saved = localStorage.getItem("language");
-      if (saved) return saved;
-      const lang = navigator.language.slice(0, 2);
-      return lang === "it" ? "it" : "en";
-    }
-
-    window.onload = () => {
-      setLanguage(detectBrowserLanguage());
-    };
+    langSelect.addEventListener('change', () => {
+      const selectedLang = langSelect.value;
+      cvContent.innerHTML = contents[selectedLang] || contents['en'];
+    });
   </script>
+
 </body>
 </html>
