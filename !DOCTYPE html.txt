@@ -291,7 +291,7 @@
         <div>
           <div class="job-title">Laurea in Ingegneria Meccanica</div>
           <div class="date-location">Ambo University Institute of Technology, Ambo, Etiopia</div>
-          <a href="https://ambou.edu.et/" target="_blank" rel="noopener">ambou.edu.et</a>
+          <a href="https://www.ambou.edu.et/" target="_blank" rel="noopener">www.ambou.edu.et</a>
         </div>
         <div style="margin-top: 20px;">
           <div class="job-title">Programma Erasmus+</div>
