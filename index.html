@@ -1,266 +1,534 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ephrem Bzuayehu Asmamawu - CV</title>
-<style>
-  :root {
-    --primary-color: #0d3b66;
-    --secondary-color: #1d3557;
-    --accent-color: #a8dadc;
-    --text-color: #222;
-    --background-color: #f9fbfc;
-    --card-background: #fff;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding: 20px;
-  }
-
-  .container {
-    max-width: 900px;
-    background: var(--card-background);
-    margin: 0 auto;
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  }
-
-  header {
-    margin-bottom: 2rem;
-    border-bottom: 3px solid var(--primary-color);
-    padding-bottom: 1rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-  }
-
-  h2 {
-    color: var(--secondary-color);
-    margin: 2rem 0 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--accent-color);
-  }
-
-  .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-  }
-
-  .contact-info > * {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 600;
-    transition: opacity 0.3s ease;
-  }
-
-  a:hover {
-    opacity: 0.8;
-    text-decoration: underline;
-  }
-
-  .section-item {
-    margin: 1.5rem 0;
-  }
-
-  .job-title {
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
-
-  .date-location {
-    display: block;
-    font-style: italic;
-    color: #666;
-    margin: 0.3rem 0;
-    font-size: 0.9rem;
-  }
-
-  ul {
-    padding-left: 1.5rem;
-    margin: 0.8rem 0;
-  }
-
-  .skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin: 1rem 0;
-  }
-
-  .skill {
-    background: var(--accent-color);
-    color: var(--secondary-color);
-    padding: 0.4rem 1rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-
-  .download-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--primary-color);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    margin: 1rem 0;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .download-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(13, 59, 102, 0.3);
-  }
-
-  .lang-switcher {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: flex-end;
-    margin-bottom: 1.5rem;
-  }
-
-  .lang-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 6px;
-    background: var(--accent-color);
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-
-  .lang-btn.active {
-    background: var(--primary-color);
-    color: white;
-  }
-
-  @media (max-width: 768px) {
-    .container {
-      padding: 1.5rem;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ephrem Bzuayehu Asmamawu - CV</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f9;
+      margin: 0;
+      padding: 20px;
+      color: #222;
+      line-height: 1.6;
     }
-
+    .container {
+      max-width: 900px;
+      background: #fff;
+      margin: auto;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
     h1 {
-      font-size: 2rem;
+      font-size: 2.6em;
+      margin-bottom: 5px;
+      color: #0d3b66;
+      border-bottom: 3px solid #0d3b66;
+      padding-bottom: 8px;
     }
-
+    h2 {
+      color: #1d3557;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #a8dadc;
+      padding-bottom: 5px;
+    }
+    p, li {
+      font-size: 1.05em;
+    }
+    ul {
+      list-style: inside disc;
+      padding-left: 0;
+    }
     .contact-info {
-      flex-direction: column;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #555;
     }
-  }
-
-  @media print {
+    .contact-info span {
+      display: block;
+      margin-bottom: 5px;
+    }
+    a {
+      color: #1d3557;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section-content {
+      margin-left: 15px;
+    }
+    .job-title {
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .date-location {
+      font-style: italic;
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .skill-list span {
+      background: #a8dadc;
+      color: #1d3557;
+      padding: 6px 14px;
+      border-radius: 15px;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-bottom: 30px;
+      background-color: #0d3b66;
+      color: #fff;
+      padding: 12px 24px;
+      font-weight: 700;
+      font-size: 1.1em;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #07294d;
+    }
     .lang-switcher {
-      display: none;
+      text-align: right;
+      margin-bottom: 10px;
     }
-    
-    .container {
-      box-shadow: none;
-      padding: 0;
+    .lang-switcher button {
+      margin-left: 10px;
+      padding: 5px 12px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #1d3557;
+      color: #fff;
     }
-  }
-</style>
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      .skill-list {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <div class="lang-switcher">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <button class="lang-btn" data-lang="it">IT</button>
+      <span>Select Language:</span>
+      <button onclick="switchLanguage('en')">🇬🇧 English</button>
+      <button onclick="switchLanguage('it')">🇮🇹 Italiano</button>
     </div>
 
-    <!-- English Content -->
-    <section id="content-en" class="content-lang">
-      <header>
-        <h1>Ephrem Bzuayehu Asmamawu</h1>
-        <div class="contact-info">
-          <span>📞 +39 3514683625</span>
-          <span>✉️ <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></span>
-          <span>🔗 <a href="https://linkedin.com/in/ephremasmamawu">LinkedIn</a></span>
-          <span>🏠 Via G.B. Tiepolo, 54, 35129 Padova, Italy</span>
-        </div>
-        <a href="cv-italian.pdf" class="download-btn" download>
-          📥 Download CV (PDF)
-        </a>
-      </header>
+    <a href="cv.pdf" class="download-btn" download>📥 <span data-key="download">Download CV (PDF)</span></a>
 
-      <article>
-        <h2>About Me</h2>
-        <p>I am a master’s student in Energy Engineering with a background in Mechanical Engineering and practical experience in computer-based vehicle systems and advanced energy modeling tools. I am passionate about renewable energy and sustainability, with a strong focus on energy efficiency and innovative technologies. My goal is to apply my skills to develop solutions that contribute to a more sustainable and energy-efficient future.</p>
-      </article>
+    <h1>Ephrem Bzuayehu Asmamawu</h1>
+    <div class="contact-info">
+      <span>📞 +39 3514683625</span>
+      <span>✉️ <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></span>
+      <span>🔗 <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank">LinkedIn</a></span>
+      <span>🏠 Via Giovanni Battista Tiepolo, 54, 35129 Padova, Italy</span>
+    </div>
 
-      <article>
-        <h2>Experience</h2>
-        <div class="section-item">
-          <h3 class="job-title">Vehicle Engine Inspector</h3>
-          <span class="date-location">General Motor Shear Company | Jan 2021 – Aug 2022</span>
-          <ul>
-            <li>Diagnosed and maintained vehicle electrical systems using advanced tools</li>
-            <li>Specialized in troubleshooting automotive components</li>
-          </ul>
-        </div>
-      </article>
+    <h2 data-key="about">About Me</h2>
+    <p data-key="about_text"></p>
 
-      <!-- Other sections follow similar structure -->
-      
-    </section>
+    <h2 data-key="experience">Work Experience</h2>
+    <div class="section-content">
+      <div>
+        <div class="job-title" data-key="job1">Motor Vehicle Engine Inspector – General Motor Shear Company</div>
+        <div class="date-location">Addis Ababa, Ethiopia | Jan 2021 – Aug 2022</div>
+        <ul>
+          <li data-key="job1_desc1"></li>
+          <li data-key="job1_desc2"></li>
+        </ul>
+      </div>
+      <div style="margin-top: 25px;">
+        <div class="job-title" data-key="job2">Internship – MANENS S.P.A.</div>
+        <div class="date-location">Padova, Italy | Dec 2024 – Current</div>
+        <ul>
+          <li data-key="job2_desc1"></li>
+          <li data-key="job2_desc2"></li>
+        </ul>
+      </div>
+    </div>
 
-    <!-- Italian Content -->
-    <section id="content-it" class="content-lang" hidden>
-      <!-- Italian content structure mirroring English version -->
-    </section>
+    <h2 data-key="education">Education and Training</h2>
+    <div class="section-content">
+      <div>
+        <div class="job-title">MSc in Energy Engineering – University of Padua</div>
+        <div class="date-location">Padua, Italy | Ongoing</div>
+        <a href="https://www.unipd.it/en/" target="_blank">www.unipd.it/en</a>
+      </div>
+      <div style="margin-top: 20px;">
+        <div class="job-title">Erasmus+ Exchange Program – Warsaw University of Technology</div>
+        <div class="date-location">Warsaw, Poland | Feb 2024 – Jul 2025</div>
+        <a href="https://eng.pw.edu.pl/" target="_blank">eng.pw.edu.pl</a>
+      </div>
+      <div style="margin-top: 20px;">
+        <div class="job-title">BSc in Mechanical Engineering – Ambo University Institute of Technology</div>
+        <div class="date-location">Ambo, Ethiopia</div>
+        <a href="https://ambou.edu.et/" target="_blank">ambou.edu.et</a>
+      </div>
+    </div>
+
+    <h2 data-key="languages">Language Skills</h2>
+    <ul>
+      <li><strong>Amharic:</strong> Mother tongue</li>
+      <li><strong>English:</strong> Listening (C1), Reading (C1), Writing (B2), Speaking (B2)</li>
+      <li><strong>Italian:</strong> Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)</li>
+    </ul>
+
+    <h2 data-key="skills">Skills</h2>
+    <div class="skill-list">
+      <span>Python</span><span>SQL</span><span>MATLAB</span><span>Ansys</span><span>AutoCAD</span><span>Corel Draw</span><span>OpenStudio</span><span>EnergyPlus</span><span>Rhino</span><span>Microsoft Office</span><span>Google Drive</span>
+    </div>
+
+    <h2 data-key="org">Organizational Skills</h2>
+    <p data-key="org_text">Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in their academic success.</p>
   </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const langButtons = document.querySelectorAll('.lang-btn');
-    const contentSections = document.querySelectorAll('.content-lang');
-    
-    function setActiveLanguage(lang) {
-      // Update UI
-      langButtons.forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === lang);
+  <script>
+    const translations = {
+      en: {
+        download: "Download CV (PDF)",
+        about: "About Me",
+        about_text: "I am a master’s student in Energy Engineering with a Mechanical Engineering background...",
+        experience: "Work Experience",
+        job1: "Motor Vehicle Engine Inspector – General Motor Shear Company",
+        job1_desc1: "Diagnosed and maintained vehicle electrical systems using scanners and tools.",
+        job1_desc2: "Specialized in troubleshooting and repairing automotive components.",
+        job2: "Internship – MANENS S.P.A.",
+        job2_desc1: "Research on reducing building energy consumption...",
+        job2_desc2: "Applied modeling tools and sustainable design techniques.",
+        education: "Education and Training",
+        languages: "Language Skills",
+        skills: "Skills",
+        org: "Organizational Skills",
+        org_text: "Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in their academic success."
+      },
+      it: {
+        download: "Scarica CV (PDF)",
+        about: "Chi Sono",
+        about_text: "Sono uno studente magistrale in Ingegneria Energetica con un background in Ingegneria Meccanica...",
+        experience: "Esperienza Lavorativa",
+        job1: "Ispettore Motore Veicoli – General Motor Shear Company",
+        job1_desc1: "Diagnosi e manutenzione dei sistemi elettrici dei veicoli...",
+        job1_desc2: "Specializzato nella riparazione di componenti automobilistici.",
+        job2: "Tirocinio – MANENS S.P.A.",
+        job2_desc1: "Ricerca sulla riduzione dei consumi energetici degli edifici...",
+        job2_desc2: "Applicazione di strumenti di modellazione e design sostenibile.",
+        education: "Istruzione e Formazione",
+        languages: "Competenze Linguistiche",
+        skills: "Competenze",
+        org: "Capacità Organizzative",
+        org_text: "Coordinatore Tutor Accademici: organizzazione e supervisione di sessioni di supporto per studenti."
+      }
+    };
+
+    function setLanguage(lang) {
+      localStorage.setItem("preferredLanguage", lang);
+      const keys = document.querySelectorAll('[data-key]');
+      keys.forEach(el => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
       });
-      
-      // Show/hide content
-      contentSections.forEach(section => {
-        section.hidden = section.id !== `content-${lang}`;
-      });
-      
-      // Store preference
-      localStorage.setItem('preferredLanguage', lang);
     }
 
-    langButtons.forEach(btn => {
-      btn.addEventListener('click', () => setActiveLanguage(btn.dataset.lang));
-    });
+    function switchLanguage(lang) {
+      setLanguage(lang);
+    }
 
-    // Initialize
-    const preferredLang = localStorage.getItem('preferredLanguage') || 'en';
-    setActiveLanguage(preferredLang);
-  });
-</script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("preferredLanguage");
+      const lang = saved || (navigator.language.startsWith("it") ? "it" : "en");
+      setLanguage(lang);
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ephrem Bzuayehu Asmamawu - CV</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f9;
+      margin: 0;
+      padding: 20px;
+      color: #222;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      background: #fff;
+      margin: auto;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 2.6em;
+      margin-bottom: 5px;
+      color: #0d3b66;
+      border-bottom: 3px solid #0d3b66;
+      padding-bottom: 8px;
+    }
+    h2 {
+      color: #1d3557;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #a8dadc;
+      padding-bottom: 5px;
+    }
+    p, li {
+      font-size: 1.05em;
+    }
+    ul {
+      list-style: inside disc;
+      padding-left: 0;
+    }
+    .contact-info {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #555;
+    }
+    .contact-info span {
+      display: block;
+      margin-bottom: 5px;
+    }
+    a {
+      color: #1d3557;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section-content {
+      margin-left: 15px;
+    }
+    .job-title {
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .date-location {
+      font-style: italic;
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .skill-list span {
+      background: #a8dadc;
+      color: #1d3557;
+      padding: 6px 14px;
+      border-radius: 15px;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-bottom: 30px;
+      background-color: #0d3b66;
+      color: #fff;
+      padding: 12px 24px;
+      font-weight: 700;
+      font-size: 1.1em;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #07294d;
+    }
+    .lang-switcher {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .lang-switcher button {
+      margin-left: 10px;
+      padding: 5px 12px;
+      font-size: 0.9em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #1d3557;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      .skill-list {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switcher">
+      <span>Select Language:</span>
+      <button onclick="switchLanguage('en')">🇬🇧 English</button>
+      <button onclick="switchLanguage('it')">🇮🇹 Italiano</button>
+    </div>
+
+    <a href="cv.pdf" class="download-btn" download>📥 <span data-key="download">Download CV (PDF)</span></a>
+
+    <h1>Ephrem Bzuayehu Asmamawu</h1>
+    <div class="contact-info">
+      <span>📞 +39 3514683625</span>
+      <span>✉️ <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></span>
+      <span>🔗 <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank">LinkedIn</a></span>
+      <span>🏠 Via Giovanni Battista Tiepolo, 54, 35129 Padova, Italy</span>
+    </div>
+
+    <h2 data-key="about">About Me</h2>
+    <p data-key="about_text"></p>
+
+    <h2 data-key="experience">Work Experience</h2>
+    <div class="section-content">
+      <div>
+        <div class="job-title" data-key="job1">Motor Vehicle Engine Inspector – General Motor Shear Company</div>
+        <div class="date-location">Addis Ababa, Ethiopia | Jan 2021 – Aug 2022</div>
+        <ul>
+          <li data-key="job1_desc1"></li>
+          <li data-key="job1_desc2"></li>
+        </ul>
+      </div>
+      <div style="margin-top: 25px;">
+        <div class="job-title" data-key="job2">Internship – MANENS S.P.A.</div>
+        <div class="date-location">Padova, Italy | Dec 2024 – Current</div>
+        <ul>
+          <li data-key="job2_desc1"></li>
+          <li data-key="job2_desc2"></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 data-key="education">Education and Training</h2>
+    <div class="section-content">
+      <div>
+        <div class="job-title">MSc in Energy Engineering – University of Padua</div>
+        <div class="date-location">Padua, Italy | Ongoing</div>
+        <a href="https://www.unipd.it/en/" target="_blank">www.unipd.it/en</a>
+      </div>
+      <div style="margin-top: 20px;">
+        <div class="job-title">Erasmus+ Exchange Program – Warsaw University of Technology</div>
+        <div class="date-location">Warsaw, Poland | Feb 2024 – Jul 2025</div>
+        <a href="https://eng.pw.edu.pl/" target="_blank">eng.pw.edu.pl</a>
+      </div>
+      <div style="margin-top: 20px;">
+        <div class="job-title">BSc in Mechanical Engineering – Ambo University Institute of Technology</div>
+        <div class="date-location">Ambo, Ethiopia</div>
+        <a href="https://ambou.edu.et/" target="_blank">ambou.edu.et</a>
+      </div>
+    </div>
+
+    <h2 data-key="languages">Language Skills</h2>
+    <ul>
+      <li><strong>Amharic:</strong> Mother tongue</li>
+      <li><strong>English:</strong> Listening (C1), Reading (C1), Writing (B2), Speaking (B2)</li>
+      <li><strong>Italian:</strong> Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)</li>
+    </ul>
+
+    <h2 data-key="skills">Skills</h2>
+    <div class="skill-list">
+      <span>Python</span><span>SQL</span><span>MATLAB</span><span>Ansys</span><span>AutoCAD</span><span>Corel Draw</span><span>OpenStudio</span><span>EnergyPlus</span><span>Rhino</span><span>Microsoft Office</span><span>Google Drive</span>
+    </div>
+
+    <h2 data-key="org">Organizational Skills</h2>
+    <p data-key="org_text">Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in their academic success.</p>
+  </div>
+
+  <script>
+    const translations = {
+      en: {
+        download: "Download CV (PDF)",
+        about: "About Me",
+        about_text: "I am a master’s student in Energy Engineering with a Mechanical Engineering background...",
+        experience: "Work Experience",
+        job1: "Motor Vehicle Engine Inspector – General Motor Shear Company",
+        job1_desc1: "Diagnosed and maintained vehicle electrical systems using scanners and tools.",
+        job1_desc2: "Specialized in troubleshooting and repairing automotive components.",
+        job2: "Internship – MANENS S.P.A.",
+        job2_desc1: "Research on reducing building energy consumption...",
+        job2_desc2: "Applied modeling tools and sustainable design techniques.",
+        education: "Education and Training",
+        languages: "Language Skills",
+        skills: "Skills",
+        org: "Organizational Skills",
+        org_text: "Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in their academic success."
+      },
+      it: {
+        download: "Scarica CV (PDF)",
+        about: "Chi Sono",
+        about_text: "Sono uno studente magistrale in Ingegneria Energetica con un background in Ingegneria Meccanica...",
+        experience: "Esperienza Lavorativa",
+        job1: "Ispettore Motore Veicoli – General Motor Shear Company",
+        job1_desc1: "Diagnosi e manutenzione dei sistemi elettrici dei veicoli...",
+        job1_desc2: "Specializzato nella riparazione di componenti automobilistici.",
+        job2: "Tirocinio – MANENS S.P.A.",
+        job2_desc1: "Ricerca sulla riduzione dei consumi energetici degli edifici...",
+        job2_desc2: "Applicazione di strumenti di modellazione e design sostenibile.",
+        education: "Istruzione e Formazione",
+        languages: "Competenze Linguistiche",
+        skills: "Competenze",
+        org: "Capacità Organizzative",
+        org_text: "Coordinatore Tutor Accademici: organizzazione e supervisione di sessioni di supporto per studenti."
+      }
+    };
+
+    function setLanguage(lang) {
+      localStorage.setItem("preferredLanguage", lang);
+      const keys = document.querySelectorAll('[data-key]');
+      keys.forEach(el => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    function switchLanguage(lang) {
+      setLanguage(lang);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("preferredLanguage");
+      const lang = saved || (navigator.language.startsWith("it") ? "it" : "en");
+      setLanguage(lang);
+    });
+  </script>
 </body>
 </html>
