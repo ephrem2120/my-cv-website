@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ephrem Bzuayehu Asmamawu - CV</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    header, section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+    }
+    h2 {
+      border-bottom: 2px solid #2e86de;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 0.95em;
+    }
+    .contact-info a {
+      color: #2e86de;
+      text-decoration: none;
+    }
+    .download-btn {
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+      background-color: #2e86de;
+      color: white;
+      padding: 12px 25px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #1b5fbf;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .skills, .languages {
+      columns: 2;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #999;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .skills, .languages {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ephrem Bzuayehu Asmamawu</h1>
+    <div class="contact-info">
+      <p>Nationality: Ethiopian | Date of Birth: 29/05/1997</p>
+      <p>Phone: (+39) 3514683625 | Email: <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ephremasmamawu" target="_blank">linkedin.com/in/ephremasmamawu</a></p>
+      <p>Address: Via Giovanni Battista Tiepolo, 54, 35129 Padova (Italy)</p>
+    </div>
+
+    <p style="text-align: center;">
+      <a href="cv.pdf" class="download-btn" download>📄 Download My CV (PDF)</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a master’s student in Energy Engineering with a Mechanical Engineering background and hands-on experience
+      in computer-based vehicle systems, and advanced energy modeling tools. Passionate about renewable energy and sustainability, focusing on energy efficiency and innovative technologies. My goal is to apply my expertise to develop solutions that contribute to a more sustainable and energy-efficient future.
+    </p>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <strong>Motor Vehicle Engine Inspector</strong><br>
+        General Motor Shear Company – Addis Ababa, Ethiopia<br>
+        <em>[20/01/2021 – 01/08/2022]</em><br>
+        Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools. Specialized in troubleshooting and repairing automotive electrical components.
+      </li>
+      <li>
+        <strong>Internship (Energy Research)</strong><br>
+        MANENS S.P.A., Padova, Italy<br>
+        <em>[15/12/2024 – Present]</em><br>
+        Conducting research on reducing building energy consumption and applying sustainable design techniques to improve building performance.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>Energy Engineering (MSc)</strong> – University of Padua, Italy<br>
+        <a href="https://www.unipd.it/en/" target="_blank">https://www.unipd.it/en/</a>
+      </li>
+      <li>
+        <strong>Erasmus+ Exchange Program</strong> – Warsaw University of Technology, Poland<br>
+        <em>[17/02/2024 – 20/07/2025]</
