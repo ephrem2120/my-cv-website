@@ -1,116 +1,247 @@
-    <h2>Skills</h2>
-    <div class="skill-list">
-      <span>Google Drive</span>
-      <span>Microsoft Excel</span>
-      <span>Microsoft PowerPoint</span>
-      <span>Microsoft Office</span>
-      <span>Python</span>
-      <span>MATLAB</span>
-      <span>SQL</span>
-      <span>Ansys</span>
-      <span>AutoCAD</span>
-      <span>Corel Draw</span>
-      <span>Open Studio</span>
-      <span>EnergyPlus</span>
-      <span>Rhino</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ephrem Bzuayehu Asmamawu - CV</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fbfc;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    background: #fff;
+    margin: auto;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  }
+  h1 {
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    color: #0d3b66;
+    border-bottom: 3px solid #0d3b66;
+    padding-bottom: 8px;
+  }
+  h2 {
+    color: #1d3557;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #a8dadc;
+    padding-bottom: 5px;
+  }
+  p, li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+  ul {
+    list-style: inside disc;
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  ul li {
+    margin-bottom: 15px;
+  }
+  .contact-info {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+  }
+  .contact-info span {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 6px;
+  }
+  a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .download-btn {
+    display: inline-block;
+    margin: 20px 0 30px 0;
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 14px 28px;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(13,59,102,0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .download-btn:hover {
+    background-color: #07294d;
+    box-shadow: 0 8px 20px rgba(7,41,77,0.6);
+  }
+  .lang-buttons {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  .lang-btn {
+    background: #a8dadc;
+    color: #1d3557;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .lang-btn:hover, .lang-btn.active {
+    background-color: #0d3b66;
+    color: #fff;
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 25px 20px;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+    .download-btn {
+      font-size: 1em;
+      padding: 12px 20px;
+    }
+    .lang-buttons {
+      text-align: center;
+    }
+    .lang-btn {
+      margin: 5px 5px 10px 5px;
+    }
+  }
+  .content-lang {
+    display: none;
+  }
+  .content-lang.active {
+    display: block;
+  }
+  .section-subtitle {
+    font-weight: 600;
+    color: #0d3b66;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .job-duration, .edu-duration {
+    font-style: italic;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Language Switch -->
+    <div class="lang-buttons">
+      <button class="lang-btn" data-lang="en" id="btn-en">English</button>
+      <button class="lang-btn" data-lang="it" id="btn-it">Italiano</button>
     </div>
 
-    <h2>Organizational Skills</h2>
-    <p>
-      Academic Tutor Coordinator: Coordinated academic tutoring activities, organizing and supervising tutoring sessions
-      to ensure students received necessary support to excel in their studies.
-    </p>
-  </article>
-</section>
-
-<!-- Italian Content -->
-<section id="content-it" class="content-lang">
-  <header>
-    <h1>Ephrem Bzuayehu Asmamawu</h1>
+    <!-- English Content -->
+    <section id="content-en" class="content-lang">
+      <header>
+        <h1>Ephrem Bzuayehu Asmamawu</h1>
         <div class="contact-info">
           <span>📞 +39 3514683625</span>
           <span>✉️ <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></span>
-          <span>🔗 <a href="https://linkedin.com/in/ephremasmamawu">LinkedIn</a></span>
-          <span>🏠 Via G.B. Tiepolo, 54, 35129 Padova, Italy</span>
+          <span>🔗 <a href="https://linkedin.com/in/ephremasmamawu" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+          <span>🏠 Via Giovanni Battista Tiepolo, 54, 35129 Padova, Italy</span>
         </div>
+        <a href="cv-english.pdf" class="download-btn" download="Ephrem_Bzuayehu_CV_English.pdf" target="_blank" rel="noopener">
+          📥 Download CV (English PDF)
+        </a>
+      </header>
 
-    <a href="cv-italian.pdf" class="download-btn" download="Ephrem_Bzuayehu_CV_Italian.pdf" target="_blank" rel="noopener">
-      📥 Scarica CV (PDF Italiano)
-    </a>
-  </header>
+      <article>
+        <h2>About Me</h2>
+        <p>
+          I am a master’s student in Energy Engineering with a Mechanical Engineering background and hands-on experience
+          in computer-based vehicle systems, advanced energy modeling tools, and problem-solving. I am passionate about renewable energy and sustainability,
+          focusing on energy efficiency and innovative technologies. My goal is to apply my expertise to develop solutions
+          that contribute to a more sustainable and energy-efficient future.
+        </p>
 
-  <article>
-    <h2>Chi Sono</h2>
-    <p>
-      Sono uno studente magistrale in Ingegneria Energetica con una laurea in Ingegneria Meccanica e esperienza pratica
-      in sistemi veicolari basati su computer, strumenti avanzati di modellazione energetica e problem solving.
-      Sono appassionato di energie rinnovabili e sostenibilità, con un focus sull'efficienza energetica e tecnologie innovative.
-      Il mio obiettivo è applicare le mie competenze per sviluppare soluzioni che contribuiscano a un futuro più sostenibile ed efficiente.
-    </p>
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <span class="section-subtitle">Motor Vehicle Engine Inspector – GENERAL MOTOR SHEAR COMPANY</span><br />
+            Addis Ababa, Ethiopia<br />
+            <span class="job-duration">Jan 2021 – Aug 2022</span><br />
+            Diagnosed and maintained vehicle electrical systems using scanners and computer-based tools. Specialized in troubleshooting and repairing automotive electrical components.
+          </li>
+          <li>
+            <span class="section-subtitle">Internship – MANENS S.P.A.</span><br />
+            Padova, Italy<br />
+            <span class="job-duration">Dec 2024 – Present</span><br />
+            Conducting research on reducing building energy consumption. Applying modeling tools and sustainable design techniques to improve energy efficiency in building operations.
+          </li>
+        </ul>
 
-    <h2>Esperienza Lavorativa</h2>
-    <ul>
-      <li>
-        <strong>Ispettore Motori Veicoli – GENERAL MOTOR SHEAR COMPANY</strong><br />
-        Addis Abeba, Etiopia | 20/01/2021 – 01/08/2022<br />
-        Diagnosi e manutenzione dei sistemi elettrici dei veicoli utilizzando scanner e strumenti computerizzati. Specializzato nella risoluzione di problemi e riparazione di componenti elettrici automobilistici.
-      </li>
-      <li>
-       
-          <strong>Tirocinio – MANENS S.P.A.</strong><br />
-        Padova, Italia | 15/12/2024 – Presente<br />
-        Ricerca per ridurre il consumo energetico degli edifici. Applicazione di strumenti di modellazione e tecniche di design sostenibile per migliorare l’efficienza energetica nelle operazioni edilizie.
-      </li>
-    </ul>
+        <h2>Education and Training</h2>
+        <ul>
+          <li>
+            <span class="section-subtitle">Bachelor's Degree in Mechanical Engineering – Ambo University Institute of Technology</span><br />
+            Ambo, Ethiopia<br />
+            <span class="edu-duration">2015 – 2020</span><br />
+            <a href="https://ambou.edu.et/" target="_blank" rel="noopener noreferrer">ambou.edu.et</a>
+          </li>
+          <li>
+            <span class="section-subtitle">Erasmus+ Exchange Program – Warsaw University of Technology</span><br />
+            Warsaw, Poland<br />
+            <span class="edu-duration">Feb 2024 – Jul 2025</span><br />
+            Faculty of Power and Aeronautical Engineering<br />
+            <a href="https://eng.pw.edu.pl/" target="_blank" rel="noopener noreferrer">eng.pw.edu.pl</a>
+          </li>
+          <li>
+            <span class="section-subtitle">Current MSc in Energy Engineering – University of Padua</span><br />
+            Padova, Italy<br />
+            <span class="edu-duration">2023 – Present</span><br />
+            <a href="https://www.unipd.it/en/" target="_blank" rel="noopener noreferrer">unipd.it/en</a>
+          </li>
+        </ul>
 
-    <h2>Istruzione e Formazione</h2>
-    <ul>
-      <li>
-       
-     <strong>Laurea in Ingegneria Meccanica – Ambo University Institute of Technology</strong><br />
-        Ambo, Etiopia | Laureato nel 2020<br />
-        <a href="https://ambou.edu.et/" target="_blank" rel="noopener noreferrer">ambou.edu.et</a>
-      </li>
-      <li>
-        <strong>Programma Erasmus+ – Politecnico di Varsavia</strong><br />
-        Varsavia, Polonia | 17/02/2024 – 20/07/2025<br />
-        <a href="https://eng.pw.edu.pl/" target="_blank" rel="noopener noreferrer">eng.pw.edu.pl</a>
-      </li>
-      <li>
-        <strong>Master in Ingegneria Energetica – Università di Padova</strong><br />
-        Padova, Italia | Iscritto dal 2023 – Presente<br />
-        <a href="https://www.unipd.it/en/" target="_blank" rel="noopener noreferrer">unipd.it/en</a>
-      </li>
-    </ul>
+        <h2>Language Skills</h2>
+        <ul>
+          <li><strong>Amharic:</strong> Mother tongue</li>
+          <li><strong>English:</strong> Listening (C1), Reading (B2), Writing (B2), Speaking (B2)</li>
+          <li><strong>Italian:</strong> Listening (A2), Reading (A2), Writing (A2), Speaking (A2/A1)</li>
+        </ul>
 
-    <h2>Competenze Linguistiche</h2>
-    <ul>
-      <li><strong>Amarico:</strong> Madrelingua</li>
-      <li><strong>Inglese:</strong> Ascolto (C1), Lettura (B2), Scrittura (B2), Parlato (B2)</li>
-      <li><strong>Italiano:</strong> Ascolto (A2), Lettura (A2), Scrittura (A2), Parlato (A2/A1)</li>
-    </ul>
+        <h2>Skills</h2>
+        <p>
+          Google Drive, Microsoft Excel, Microsoft PowerPoint, Microsoft Office, Python, MATLAB, SQL, Ansys, AutoCAD, Corel Draw, Open Studio, EnergyPlus, Rhino
+        </p>
 
-    <h2>Competenze Tecniche</h2>
-    <div class="skill-list">
-      <span>Google Drive</span>
-      <span>Microsoft Excel</span>
-      <span>Microsoft PowerPoint</span>
-      <span>Microsoft Office</span>
-      <span>Python</span>
-      <span>MATLAB</span>
-      <span>SQL</span>
-      <span>Ansys</span>
-      <span>AutoCAD</span>
-      <span>Corel Draw</span>
-      <span>Open Studio</span>
-      <span>EnergyPlus</span>
-      <span>Rhino</span>
-    </div>
+        <h2>Organizational Skills</h2>
+        <p>
+          Academic Tutor Coordinator: Organized and supervised tutoring sessions to support students in excelling academically.
+        </p>
+      </article>
+    </section>
 
-    <h2>Capacità Organizzative</h2>
-    <p>
-      Coordinatore Tutorato Accademico: organizzazione e supervisione delle sessioni di tutorato per garantire
-      agli studenti il supporto necessario per eccellere negli studi.
-    </p>
-  </article>
-</section>
+    <!-- Italian Content -->
+    <section id="content-it" class="content-lang">
+      <header>
+        <h1>Ephrem Bzuayehu Asmamawu</h1>
+        <div class="contact-info">
+          <span>📞 +39 3514683625</span>
+          <span>✉️ <a href="mailto:ebzuayehu21@gmail.com">ebzuayehu21@gmail.com</a></span>
+          <span>🔗 <a href="https://linkedin.com/in/ephremasmamawu" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+          <span>🏠 Via Giovanni Battista Tiepolo, 54, 35129 Padova, Italia</span>
+        </div>
+        <a href="cv-italian.pdf" class="download-btn" download="
