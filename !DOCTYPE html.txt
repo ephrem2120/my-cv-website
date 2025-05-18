@@ -86,6 +86,24 @@
       font-weight: 600;
       font-size: 0.95em;
     }
+    /* Download Button */
+    .download-btn {
+      display: inline-block;
+      margin-bottom: 30px;
+      background-color: #0d3b66;
+      color: #fff;
+      padding: 14px 28px;
+      font-weight: 700;
+      font-size: 1.2em;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(13, 59, 102, 0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #07294d;
+      box-shadow: 0 8px 20px rgba(7, 41, 77, 0.6);
+    }
     @media (max-width: 600px) {
       .container {
         padding: 25px 20px;
@@ -96,11 +114,23 @@
       h2 {
         font-size: 1.3em;
       }
+      .download-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+      .skill-list {
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Download PDF Button -->
+    <a href="cv.pdf" class="download-btn" download="Ephrem_Bzuayehu_Asmamawu_CV.pdf" target="_blank" rel="noopener">
+      📥 Download CV (PDF)
+    </a>
+
     <h1>Ephrem Bzuayehu Asmamawu</h1>
     <div class="contact-info">
       <span>📞 +39 3514683625</span>
